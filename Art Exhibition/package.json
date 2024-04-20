@@ -1,0 +1,23 @@
+{
+  "name": "Virtual Art Exhibition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build src/index.html --no-content-hash --no-minify --no-source-maps --public-url ./",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "author": "NAWAB$",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.6.1",
+    "imagesloaded": "^4.1.4",
+    "parcel": "latest",
+    "splitting": "^1.0.6"
+  },
+  "devDependencies": {
+    "events": "^3.3.0"
+  }
+}
